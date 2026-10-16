@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cardápio escolar semanal com refeições e dicas de alimentação saudável.">
+  <title>Prato Feliz | Cardápio Escolar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="container nav">
+      <a class="logo" href="#inicio"><span class="logo-icon">🍎</span> Prato<span>Feliz</span></a>
+      <button id="menuBtn" class="menu-btn" aria-label="Abrir menu" aria-expanded="false">☰</button>
+      <ul class="menu" id="menu">
+        <li><a href="#inicio">Início</a></li><li><a href="#cardapio">Cardápio</a></li>
+        <li><a href="#dicas">Dicas saudáveis</a></li><li><a href="#sobre">Sobre</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">ALIMENTAÇÃO ESCOLAR</span>
+          <h1>Comer bem é aprender com <span>energia!</span></h1>
+          <p>Confira uma sugestão de cardápio semanal com refeições variadas, coloridas e pensadas para incentivar hábitos alimentares saudáveis na escola.</p>
+          <a class="button" href="#cardapio">Ver cardápio da semana ↓</a>
+          <p class="small-note">Exemplo educativo — confirme o cardápio oficial com a escola.</p>
+        </div>
+        <div class="food-art" aria-label="Ilustração de prato saudável" role="img">
+          <div class="sun"></div><div class="plate"><span>🥦</span><span>🥕</span><span>🍚</span><span>🍗</span><span>🍅</span></div>
+          <div class="float-fruit fruit-one">🍊</div><div class="float-fruit fruit-two">🍓</div>
+          <div class="sparkle sparkle-one">✦</div><div class="sparkle sparkle-two">✦</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="cardapio">
+      <div class="section-title">
+        <span class="eyebrow">PLANEJE SUA SEMANA</span>
+        <h2>Cardápio da semana</h2>
+        <p>Selecione um dia para ver a sugestão de refeição.</p>
+      </div>
+      <div class="day-tabs" role="group" aria-label="Escolha o dia da semana">
+        <button class="day-tab active" data-day="segunda">Segunda</button>
+        <button class="day-tab" data-day="terca">Terça</button>
+        <button class="day-tab" data-day="quarta">Quarta</button>
+        <button class="day-tab" data-day="quinta">Quinta</button>
+        <button class="day-tab" data-day="sexta">Sexta</button>
+      </div>
+      <article class="meal-card" aria-live="polite">
+        <div class="meal-visual" id="mealVisual"><span id="mealEmoji">🍛</span><p id="mealDay">SEGUNDA-FEIRA</p></div>
+        <div class="meal-info">
+          <span class="meal-label">SUGESTÃO DO DIA</span>
+          <h3 id="mealTitle">Arroz, feijão e frango</h3>
+          <p id="mealDescription">Uma refeição caseira acompanhada de legumes e fruta.</p>
+          <ul class="meal-list" id="mealList">
+            <li>🍚 Arroz e feijão</li><li>🍗 Frango assado</li><li>🥕 Legumes cozidos</li><li>🍌 Banana de sobremesa</li>
+          </ul>
+          <p class="meal-footnote">O cardápio real pode variar conforme a escola e as necessidades dos estudantes.</p>
+        </div>
+      </article>
+      <div class="week-summary">
+        <div><span class="summary-icon">🥗</span><strong>Variedade</strong><p>Experimente diferentes alimentos.</p></div>
+        <div><span class="summary-icon">💧</span><strong>Hidratação</strong><p>Beba água ao longo do dia.</p></div>
+        <div><span class="summary-icon">🍌</span><strong>Frutas</strong><p>Inclua frutas nas refeições.</p></div>
+      </div>
+    </section>
+
+    <section class="tips-section" id="dicas">
+      <div class="container">
+        <div class="section-title"><span class="eyebrow">PEQUENOS HÁBITOS</span><h2>Dicas para comer bem</h2><p>Atitudes simples ajudam a cuidar do corpo e da mente.</p></div>
+        <div class="tips-grid">
+          <article class="tip-card"><div class="tip-icon pink">🍎</div><h3>Monte um prato colorido</h3><p>Variar os alimentos ajuda a incluir diferentes nutrientes.</p></article>
+          <article class="tip-card"><div class="tip-icon blue">🚰</div><h3>Não esqueça a água</h3><p>Tenha o hábito de beber água durante as atividades escolares.</p></article>
+          <article class="tip-card"><div class="tip-icon yellow">🤝</div><h3>Evite o desperdício</h3><p>Sirva uma quantidade adequada e, se quiser mais, pegue novamente.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about container" id="sobre">
+      <div class="about-emoji">🥕</div>
+      <div><span class="eyebrow">NOSSO OBJETIVO</span><h2>Uma escola mais saudável</h2><p>O Prato Feliz é um projeto escolar demonstrativo criado para apresentar um cardápio semanal de forma simples e interativa. A alimentação escolar deve respeitar as orientações da escola, a cultura alimentar local, alergias e necessidades individuais.</p></div>
+    </section>
+  </main>
+  <footer><div class="container footer-inner"><a class="logo" href="#inicio">🍎 Prato<span>Feliz</span></a><p>Projeto educativo de cardápio escolar</p><p>© <span id="year"></span></p></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
